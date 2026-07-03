@@ -207,9 +207,19 @@
         }, 600);
 
       } else {
-        /* ----- MÓVIL: swipe nativo + detección de scroll ----- */
+        /* ----- FALLBACK: swipe nativo (móvil Y desktop sin GSAP) ----- */
         wrap.style.overflowX = 'auto';
+        wrap.style.webkitOverflowScrolling = 'touch';
         wrap.style.scrollSnapType = 'x mandatory';
+        wrap.style.scrollbarWidth = 'none';
+
+        // Aplicar estilos de card para que funcione en desktop también
+        cards.forEach(function (c) {
+          c.style.width = '100vw';
+          c.style.minHeight = '100svh';
+          c.style.flexShrink = '0';
+          c.style.scrollSnapAlign = 'start';
+        });
 
         // Observer para detectar qué card está visible
         var observer = new IntersectionObserver(function (entries) {
