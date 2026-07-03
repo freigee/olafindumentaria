@@ -15,7 +15,7 @@ window.__OLAF__ = {
     address:     "Bernardo Monteagudo 3045, Florencio Varela",
     addressShort:"Monteagudo 3045 · Florencio Varela",
     phone:       "43556868",
-    whatsapp:    "+5411675950533",
+    whatsapp:    "+5491167595053",
     instagram:   "olaf.indumentaria",
     hours:       "Lunes a Sábados · 09:00 → 20:30",
     established: "EST. 1995 · BSAS",
