@@ -1,4 +1,4 @@
-# OLAF · Guía de edición y publicación
+# OLAF · Guía de edición y publicación.
 
 Hola. Esta guía está escrita para que puedas editar y publicar tu web sin necesitar conocimientos técnicos. Seguí los pasos en orden.
 
