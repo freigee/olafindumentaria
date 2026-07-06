@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OLAF — Indumentaria en Florencio Varela desde 1995. Conocé el local, el equipo y nuestra historia.">
+  <meta name="theme-color" content="#1F1F1F">
+  <title>Nosotros · OLAF · Indumentaria · Florencio Varela</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400;1,6..96,700&family=Manrope:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260706">
+</head>
+<body>
+
+<div id="cursor" aria-hidden="true">
+  <div class="cursor-ring"></div>
+  <span class="cursor-label"></span>
+</div>
+
+<div class="aurora" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<aside class="side-brand" aria-label="Estado del local">
+  <span class="side-brand__dot" aria-hidden="true"></span>
+  <span class="side-brand__text">ABIERTO · LUN → SÁB · 09:00 → 20:30</span>
+</aside>
+
+<div id="splash" role="status" aria-label="Cargando OLAF">
+  <div class="splash__letters" aria-hidden="true">
+    <span class="splash__letter">O</span>
+    <span class="splash__letter">L</span>
+    <span class="splash__letter">A</span>
+    <span class="splash__letter">F</span>
+  </div>
+  <div class="splash__bar" aria-hidden="true">
+    <div class="splash__bar-fill"></div>
+  </div>
+  <p class="splash__tagline">EST. 1995 · BSAS</p>
+</div>
+
+<nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+  <a href="index.html" class="nav__logo" data-cursor="ver">
+    <img src="img/logos/olaf.png" alt="OLAF" class="nav__logo-img" loading="eager" onerror="this.style.display='none'">
+  </a>
+
+  <ul class="nav__links" role="list">
+    <li><a href="index.html"    class="nav__link" data-cursor="ver"><span class="nav__num">01</span>Inicio</a></li>
+    <li><a href="tienda.html"   class="nav__link" data-cursor="ver"><span class="nav__num">02</span>Tienda</a></li>
+    <li><a href="nosotros.html" class="nav__link" data-cursor="leer" aria-current="page"><span class="nav__num">03</span>Nosotros</a></li>
+    <li><a href="contacto.html" class="nav__link" data-cursor="enviar"><span class="nav__num">04</span>Contacto</a></li>
+  </ul>
+
+  <a href="https://wa.me/5491167595053?text=Hola%2C%20vi%20la%20web%20de%20OLAF%20y%20quiero%20consultar%20sobre%20ropa." class="nav__cta" target="_blank" rel="noopener" data-cursor="WhatsApp" aria-label="Contactar por WhatsApp">
+    WhatsApp
+  </a>
+
+  <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav__overlay" id="navMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación" hidden>
+  <button class="nav__overlay-close" id="navClose" aria-label="Cerrar menú">✕</button>
+  <ul role="list">
+    <li><a href="index.html"    class="nav__overlay-link" data-num="01">Inicio</a></li>
+    <li><a href="tienda.html"   class="nav__overlay-link" data-num="02">Tienda</a></li>
+    <li><a href="nosotros.html" class="nav__overlay-link" data-num="03">Nosotros</a></li>
+    <li><a href="contacto.html" class="nav__overlay-link" data-num="04">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/5491167595053" class="nav__overlay-wa" target="_blank" rel="noopener">WhatsApp ↗</a>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header__bg" aria-hidden="true">
+      <img src="img/local-01.jpg" alt="">
+    </div>
+    <span class="page-eyebrow">El Local · Desde 1995</span>
+    <h1 class="page-title">Nosotros</h1>
+    <p class="page-sub">Un local de barrio con marcas de verdad, desde el corazón de Florencio Varela.</p>
+  </section>
+
+  <!-- HISTORIA -->
+  <section class="section" style="padding-top: 3rem;">
+    <div class="story">
+      <div class="story__figure story__figure-stack">
+        <img src="img/local-01.jpg" alt="Interior del local OLAF" loading="lazy" onerror="this.closest('.story__figure').style.display='none'">
+        <img src="img/local-02.jpg" alt="Ropa en percheros en OLAF" loading="lazy" onerror="this.closest('img').style.display='none'">
+      </div>
+
+      <div class="story__text">
+        <span class="page-eyebrow" style="margin-bottom: 1.2rem; display: flex;">Nuestra historia</span>
+        <h2 class="section__title reveal" data-split>
+          Menos tendencias.<br><em>Más estilo.</em>
+        </h2>
+        <p class="reveal" style="margin-top: 1.4rem; color: var(--muted); line-height: 1.75;" data-split>
+          OLAF es un local de indumentaria en el corazón peatonal de Florencio Varela. Desde 1995, ofrecemos una selección cuidada de marcas reconocidas con el mejor precio de la zona.
+        </p>
+        <p class="reveal" style="color: var(--muted); line-height: 1.75;" data-split>
+          Cada prenda que elegimos está pensada para acompañarte: cómoda, versátil y hecha para sentirte bien en el día a día. Sin complicaciones, sin pretensiones — solo ropa que te queda.
+        </p>
+        <ul class="story__list reveal">
+          <li><span class="num">01</span><span>Marcas reconocidas — Levi's, Rusty, Hang Loose, Mistral y Santa Bohemia.</span></li>
+          <li><span class="num">02</span><span>El mejor precio de la zona, garantizado.</span></li>
+          <li><span class="num">03</span><span>Atención directa por WhatsApp, sin intermediarios.</span></li>
+        </ul>
+        <a href="tienda.html" class="btn btn--primary reveal" style="display: inline-block; margin-top: 2.4rem;" data-cursor="ver">Ver tienda →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO GRID -->
+  <section class="section">
+    <div class="info-grid reveal">
+      <div class="info-card">
+        <h3>Horarios</h3>
+        <p>Lunes a Sábados<br>09:00 → 20:30</p>
+      </div>
+      <div class="info-card">
+        <h3>Dirección</h3>
+        <p>Bernardo Monteagudo 3045<br>Florencio Varela · Buenos Aires<br><em>Peatonal</em></p>
+      </div>
+      <div class="info-card">
+        <h3>Redes</h3>
+        <p>
+          <a href="https://wa.me/5491167595053" target="_blank" rel="noopener">WhatsApp →</a><br>
+          <a href="https://instagram.com/olaf.indumentaria" target="_blank" rel="noopener">@olaf.indumentaria →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__big-text" aria-hidden="true">
+    OLAF&nbsp;·&nbsp;OLAF&nbsp;·&nbsp;OLAF&nbsp;·&nbsp;OLAF&nbsp;·&nbsp;OLAF
+  </div>
+
+  <div class="footer__grid">
+    <div class="footer__col">
+      <h3 class="footer__col-title mono">Navegar</h3>
+      <p>
+        <a href="index.html"    class="footer__link">Inicio</a><br>
+        <a href="tienda.html"   class="footer__link">Tienda</a><br>
+        <a href="nosotros.html" class="footer__link">Nosotros</a><br>
+        <a href="contacto.html" class="footer__link">Contacto</a>
+      </p>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col-title mono">Contacto</h3>
+      <p>
+        <a href="tel:43556868" class="footer__link">Tel: 43556868</a><br>
+        <a href="https://wa.me/5491167595053" class="footer__link" target="_blank" rel="noopener">WA: +54 11 6759-5053</a><br>
+        <a href="https://instagram.com/olaf.indumentaria" class="footer__link" target="_blank" rel="noopener">IG: @olaf.indumentaria</a>
+      </p>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col-title mono">Horarios</h3>
+      <p>
+        Lunes a Sábados<br>
+        09:00 → 20:30<br><br>
+        <span class="mono" style="font-size:0.75rem; opacity:0.6">EST. 1995 · BSAS</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer__legal">
+    <span>© 2026 OLAF. Todos los derechos reservados.</span>
+    <span>·</span>
+    <a href="index.html#hero" class="footer__link footer__top" data-cursor="arriba" aria-label="Volver al inicio">↑ Inicio</a>
+  </div>
+</footer>
+
+<button class="cart-fab" id="cartFab" aria-label="Ver carrito" aria-expanded="false">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+  </svg>
+  <span class="cart-fab__count" id="cartCount" hidden>0</span>
+</button>
+
+<div class="cart-overlay" id="cartOverlay" hidden aria-hidden="true"></div>
+
+<aside class="cart-panel" id="cartPanel" hidden role="dialog" aria-modal="true" aria-label="Carrito de compras">
+  <div class="cart-panel__header">
+    <h2 class="cart-panel__title">Tu pedido</h2>
+    <button class="cart-panel__close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-panel__items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">Tu carrito está vacío.</p>
+  </div>
+  <div class="cart-panel__footer" id="cartFooter" hidden>
+    <div class="cart-total">
+      <span class="mono">Total estimado</span>
+      <span class="cart-total__amount" id="cartTotal">$0</span>
+    </div>
+    <p class="cart-nota mono">Los precios son orientativos. Confirmamos por WhatsApp.</p>
+    <button class="btn btn--primary cart-checkout" id="cartCheckout">
+      Enviar pedido por WhatsApp →
+    </button>
+    <button class="cart-clear mono" id="cartClear">Vaciar carrito</button>
+  </div>
+</aside>
+
+<script src="gsap.min.js?v=20260706"></script>
+<script src="ScrollTrigger.min.js?v=20260706"></script>
+<script src="manifest.js?v=20260706"></script>
+<script src="main.js?v=20260706"></script>
+
+</body>
+</html>

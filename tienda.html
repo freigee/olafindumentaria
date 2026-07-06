@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OLAF — Catálogo completo de ropa en Florencio Varela. Levi's, Rusty, Hang Loose, Mistral y Santa Bohemia. Consultá stock y precios por WhatsApp.">
+  <meta name="theme-color" content="#1F1F1F">
+  <title>Tienda · OLAF · Indumentaria · Florencio Varela</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;1,6..96,400;1,6..96,700&family=Manrope:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260706">
+</head>
+<body>
+
+<div id="cursor" aria-hidden="true">
+  <div class="cursor-ring"></div>
+  <span class="cursor-label"></span>
+</div>
+
+<div class="aurora" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<aside class="side-brand" aria-label="Estado del local">
+  <span class="side-brand__dot" aria-hidden="true"></span>
+  <span class="side-brand__text">ABIERTO · LUN → SÁB · 09:00 → 20:30</span>
+</aside>
+
+<div id="splash" role="status" aria-label="Cargando OLAF">
+  <div class="splash__letters" aria-hidden="true">
+    <span class="splash__letter">O</span>
+    <span class="splash__letter">L</span>
+    <span class="splash__letter">A</span>
+    <span class="splash__letter">F</span>
+  </div>
+  <div class="splash__bar" aria-hidden="true">
+    <div class="splash__bar-fill"></div>
+  </div>
+  <p class="splash__tagline">EST. 1995 · BSAS</p>
+</div>
+
+<nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+  <a href="index.html" class="nav__logo" data-cursor="ver">
+    <img src="img/logos/olaf.png" alt="OLAF" class="nav__logo-img" loading="eager" onerror="this.style.display='none'">
+  </a>
+
+  <ul class="nav__links" role="list">
+    <li><a href="index.html"    class="nav__link" data-cursor="ver"><span class="nav__num">01</span>Inicio</a></li>
+    <li><a href="tienda.html"   class="nav__link" data-cursor="ver" aria-current="page"><span class="nav__num">02</span>Tienda</a></li>
+    <li><a href="nosotros.html" class="nav__link" data-cursor="leer"><span class="nav__num">03</span>Nosotros</a></li>
+    <li><a href="contacto.html" class="nav__link" data-cursor="enviar"><span class="nav__num">04</span>Contacto</a></li>
+  </ul>
+
+  <a href="https://wa.me/5491167595053?text=Hola%2C%20vi%20la%20web%20de%20OLAF%20y%20quiero%20consultar%20sobre%20ropa." class="nav__cta" target="_blank" rel="noopener" data-cursor="WhatsApp" aria-label="Contactar por WhatsApp">
+    WhatsApp
+  </a>
+
+  <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav__overlay" id="navMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación" hidden>
+  <button class="nav__overlay-close" id="navClose" aria-label="Cerrar menú">✕</button>
+  <ul role="list">
+    <li><a href="index.html"    class="nav__overlay-link" data-num="01">Inicio</a></li>
+    <li><a href="tienda.html"   class="nav__overlay-link" data-num="02">Tienda</a></li>
+    <li><a href="nosotros.html" class="nav__overlay-link" data-num="03">Nosotros</a></li>
+    <li><a href="contacto.html" class="nav__overlay-link" data-num="04">Contacto</a></li>
+  </ul>
+  <a href="https://wa.me/5491167595053" class="nav__overlay-wa" target="_blank" rel="noopener">WhatsApp ↗</a>
+</div>
+
+<main id="main">
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="page-header__bg" aria-hidden="true">
+      <img src="img/local-03.jpg" alt="">
+    </div>
+    <span class="page-eyebrow">Catálogo actualizado</span>
+    <h1 class="page-title">La Tienda</h1>
+    <p class="page-sub">Stock en tiempo real. Si algo te gusta, consultanos por WhatsApp y te confirmamos talle y precio al toque.</p>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="section productos" aria-labelledby="productos-title" style="padding-top: 2rem;">
+    <div class="productos__header">
+      <h2 id="productos-title" class="section__title reveal" data-split>
+        Lo que <em>tenemos.</em>
+      </h2>
+      <p class="productos__sub reveal" data-split>Stock actualizado. Consultá disponibilidad por WhatsApp.</p>
+      <div class="productos__filtros" id="productosFiltros" role="group" aria-label="Filtrar por categoría">
+        <button class="filtro-btn filtro-btn--active" data-cat="todos">Todos</button>
+      </div>
+    </div>
+
+    <div class="productos__grid" id="productosGrid" aria-live="polite">
+      <div class="productos__loading" id="productosLoading">
+        <span class="mono">Cargando productos...</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__big-text" aria-hidden="true">
+    OLAF&nbsp;·&nbsp;OLAF&nbsp;·&nbsp;OLAF&nbsp;·&nbsp;OLAF&nbsp;·&nbsp;OLAF
+  </div>
+
+  <div class="footer__grid">
+    <div class="footer__col">
+      <h3 class="footer__col-title mono">Navegar</h3>
+      <p>
+        <a href="index.html"    class="footer__link">Inicio</a><br>
+        <a href="tienda.html"   class="footer__link">Tienda</a><br>
+        <a href="nosotros.html" class="footer__link">Nosotros</a><br>
+        <a href="contacto.html" class="footer__link">Contacto</a>
+      </p>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col-title mono">Contacto</h3>
+      <p>
+        <a href="tel:43556868" class="footer__link">Tel: 43556868</a><br>
+        <a href="https://wa.me/5491167595053" class="footer__link" target="_blank" rel="noopener">WA: +54 11 6759-5053</a><br>
+        <a href="https://instagram.com/olaf.indumentaria" class="footer__link" target="_blank" rel="noopener">IG: @olaf.indumentaria</a>
+      </p>
+    </div>
+    <div class="footer__col">
+      <h3 class="footer__col-title mono">Horarios</h3>
+      <p>
+        Lunes a Sábados<br>
+        09:00 → 20:30<br><br>
+        <span class="mono" style="font-size:0.75rem; opacity:0.6">EST. 1995 · BSAS</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer__legal">
+    <span>© 2026 OLAF. Todos los derechos reservados.</span>
+    <span>·</span>
+    <a href="index.html" class="footer__link footer__top" data-cursor="arriba" aria-label="Volver al inicio">↑ Inicio</a>
+  </div>
+</footer>
+
+<button class="cart-fab" id="cartFab" aria-label="Ver carrito" aria-expanded="false">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+  </svg>
+  <span class="cart-fab__count" id="cartCount" hidden>0</span>
+</button>
+
+<div class="cart-overlay" id="cartOverlay" hidden aria-hidden="true"></div>
+
+<aside class="cart-panel" id="cartPanel" hidden role="dialog" aria-modal="true" aria-label="Carrito de compras">
+  <div class="cart-panel__header">
+    <h2 class="cart-panel__title">Tu pedido</h2>
+    <button class="cart-panel__close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-panel__items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">Tu carrito está vacío.</p>
+  </div>
+  <div class="cart-panel__footer" id="cartFooter" hidden>
+    <div class="cart-total">
+      <span class="mono">Total estimado</span>
+      <span class="cart-total__amount" id="cartTotal">$0</span>
+    </div>
+    <p class="cart-nota mono">Los precios son orientativos. Confirmamos por WhatsApp.</p>
+    <button class="btn btn--primary cart-checkout" id="cartCheckout">
+      Enviar pedido por WhatsApp →
+    </button>
+    <button class="cart-clear mono" id="cartClear">Vaciar carrito</button>
+  </div>
+</aside>
+
+<script src="gsap.min.js?v=20260706"></script>
+<script src="ScrollTrigger.min.js?v=20260706"></script>
+<script src="manifest.js?v=20260706"></script>
+<script src="main.js?v=20260706"></script>
+
+</body>
+</html>
